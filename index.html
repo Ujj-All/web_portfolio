@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ujjwal Poudel - IT Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -164,12 +168,35 @@
             font-size: 1.1em;
         }
 
-        .experience-item, .project-item {
+        .experience-item,         .project-item {
             margin-bottom: 25px;
             padding: 20px;
             background: rgba(13, 27, 42, 0.4);
             border-radius: 10px;
             border-left: 3px solid #42a5f5;
+        }
+
+        .project-images {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .project-image {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid rgba(66, 165, 245, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-image:hover {
+            transform: scale(1.05);
+            border-color: #42a5f5;
+            box-shadow: 0 8px 25px rgba(66, 165, 245, 0.6);
         }
 
         .experience-item h3, .project-item h3 {
@@ -377,6 +404,10 @@
             <div class="project-item">
                 <h3>Personal Portfolio Website - GitHub & Domain Hosting</h3>
                 <p class="date">2025</p>
+                <div class="project-images">
+                    <img src="project1-img1.jpg" alt="Portfolio Website Screenshot 1" class="project-image">
+                    <img src="project1-img2.jpg" alt="Portfolio Website Screenshot 2" class="project-image">
+                </div>
                 <ul>
                     <li>Built a portfolio website using HTML, CSS, and React, hosted on GitHub Pages</li>
                     <li>Linked a custom domain via Cloudflare, managing DNS and mail records</li>
@@ -387,6 +418,10 @@
             <div class="project-item">
                 <h3>Virtualization & Network Lab - Proxmox VE</h3>
                 <p class="date">2025</p>
+                <div class="project-images">
+                    <img src="project2-img1.jpg" alt="Proxmox Lab Screenshot 1" class="project-image">
+                    <img src="project2-img2.jpg" alt="Proxmox Lab Screenshot 2" class="project-image">
+                </div>
                 <ul>
                     <li>Deployed Proxmox VE to create and manage virtual machines for testing and lab environments</li>
                     <li>Configured VLANs, network bridges, and storage for isolated virtual networks</li>
